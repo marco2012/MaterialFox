@@ -666,18 +666,21 @@
 #identity-box[pageproxystate="valid"]:-moz-any(.verifiedDomain, .verifiedIdentity, .mixedActiveBlocked) > #identity-icon
 {
 	list-style-image: var(--lock-icon) !important;
+	fill: #12BC00 !important;
 }
 
 /* info (not secure) */
 #identity-box[pageproxystate="valid"]:-moz-any(.mixedDisplayContent, .mixedDisplayContentLoadedActiveBlocked, .unknownIdentity) > #identity-icon
 {
     list-style-image: var(--info-icon) !important;
+	fill: #FF0039 !important;
 }
 
 /* warning (dangerous) */
 #identity-box[pageproxystate="valid"]:-moz-any(.notSecure, .weakCipher, .certUserOverridden, .certErrorPage, .insecureLoginForms, .mixedActiveContent) > #identity-icon
 {
     list-style-image: var(--warning-icon) !important;
+	fill: #FF0039 !important;
 }
 
 #urlbar-input,
